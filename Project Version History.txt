@@ -1,0 +1,21 @@
+Version 1 - Initial upload of AI Generated project code
+Date: September 17, 2026
+Track: Vibe Code Project, Phase 1
+
+Created a Python program using only the standard library. Reads the merged
+fantasy-football CSV into dictionaries, selects comparable matched players,
+groups players by position, computes PPR and saved-draft ranks within each
+group, and writes a text report and detailed CSV results.
+
+Preserves the original dataset and its description. Missing data is not
+replaced with zero. Incompatible position entries are excluded. Documents
+the unverified ADP date/scoring format and avoids predictive claims.
+
+AI tool: OpenAI Codex. Code and project documentation generated with AI help.
+
+Phase 1 review - September 17, 2026
+Checked the supplied semester project PDF and retained standard-library Python.
+Added a season audit with a 2025 source spot-check and concrete team-label
+discrepancies. ADP season remains unverified rather than guessed as 2026.
+Added season/interpretation fields to exported results and regression checks
+for ranking ties, position groups, missing data, exclusions, and empty input.

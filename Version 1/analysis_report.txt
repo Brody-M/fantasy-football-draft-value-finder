@@ -1,0 +1,91 @@
+FANTASY FOOTBALL: PPR PRODUCTION AND SAVED DRAFT ORDERING
+
+Question: Which players rank higher in PPR production than in
+saved draft ordering within the same eligible position group?
+
+Input: fantasy_football_merged.csv
+Total dataset rows: 651
+Source coverage: {'matched': 278, 'adp_only': 9, 'stats_only': 364}
+Included: 273
+Excluded: 378
+  Incompatible position: 1
+  Not present in both sources: 373
+  Missing or invalid points/draft rank: 4
+
+METHOD
+Use matched QB/RB/WR/TE players with compatible ADP positions and
+available PPR points and positive consensus draft ranks. Recompute
+both rankings within the identical eligible position group.
+Rank difference = draft rank in group minus PPR rank in group.
+Positive means a better PPR rank; negative means a worse PPR rank.
+Ties use competition ranks (1, 2, 2, 4). PPR/game is context only.
+
+LIMITATIONS
+Statistics match 2025 season data. The saved ADP season, snapshot
+date and scoring format are unverified. Team labels differ across
+sources; do not infer the ranking season from team labels alone.
+See data_season_audit.md for evidence. These differences are
+descriptive, not confirmed preseason value or future predictions.
+Total points reflect availability as well as production. Missing
+values are not zero. Excluded players are not automatically sleepers.
+Position groups have different sizes; compare gaps within positions.
+
+QB (39 eligible players)
+Mean PPR total: 197.9
+Largest positive differences:
+  Matthew Stafford: draft 25, PPR 3, gap +22; 350.4 points, 17.0 games
+  Jaxson Dart: draft 29, PPR 13, gap +16; 241.6 points, 14.0 games
+  Trevor Lawrence: draft 20, PPR 4, gap +16; 338.2 points, 17.0 games
+  Daniel Jones: draft 31, PPR 17, gap +14; 226.4 points, 13.0 games
+  Drake Maye: draft 16, PPR 2, gap +14; 352.0 points, 17.0 games
+Largest negative differences:
+  Jayden Daniels: draft 3, PPR 31, gap -28; 114.3 points, 7.0 games
+  Kyler Murray: draft 9, PPR 35, gap -26; 77.8 points, 5.0 games
+  Joe Burrow: draft 5, PPR 28, gap -23; 134.5 points, 8.0 games
+  Lamar Jackson: draft 2, PPR 19, gap -17; 214.9 points, 13.0 games
+  Justin Fields: draft 13, PPR 27, gap -14; 142.7 points, 9.0 games
+
+RB (83 eligible players)
+Mean PPR total: 128.1
+Largest positive differences:
+  Emanuel Wilson: draft 83, PPR 46, gap +37; 94.5 points, 17.0 games
+  Rico Dowdle: draft 54, PPR 17, gap +37; 216.3 points, 17.0 games
+  Devin Singletary: draft 79, PPR 43, gap +36; 108.8 points, 17.0 games
+  Kyle Monangai: draft 64, PPR 29, gap +35; 146.7 points, 17.0 games
+  Ty Johnson: draft 78, PPR 45, gap +33; 100.3 points, 17.0 games
+Largest negative differences:
+  Kaleb Johnson: draft 27, PPR 78, gap -51; 8.8 points, 10.0 games
+  James Conner: draft 20, PPR 66, gap -46; 33.3 points, 3.0 games
+  Austin Ekeler: draft 41, PPR 74, gap -33; 13.1 points, 2.0 games
+  Braelon Allen: draft 42, PPR 73, gap -31; 15.3 points, 4.0 games
+  Najee Harris: draft 45, PPR 75, gap -30; 11.6 points, 3.0 games
+
+WR (112 eligible players)
+Mean PPR total: 122.0
+Largest positive differences:
+  Michael Wilson: draft 85, PPR 10, gap +75; 220.6 points, 17.0 games
+  Tre Tucker: draft 97, PPR 37, gap +60; 161.7 points, 17.0 games
+  Wan'Dale Robinson: draft 65, PPR 14, gap +51; 217.9 points, 16.0 games
+  Kayshon Boutte: draft 98, PPR 48, gap +50; 124.1 points, 14.0 games
+  Alec Pierce: draft 75, PPR 27, gap +48; 183.3 points, 15.0 games
+Largest negative differences:
+  Malik Nabers: draft 5, PPR 84, gap -79; 57.1 points, 4.0 games
+  Tyreek Hill: draft 13, PPR 87, gap -74; 53.5 points, 4.0 games
+  Calvin Ridley: draft 29, PPR 95, gap -66; 47.3 points, 7.0 games
+  Mike Evans: draft 16, PPR 67, gap -51; 84.8 points, 8.0 games
+  Jayden Reed: draft 46, PPR 94, gap -48; 48.5 points, 7.0 games
+
+TE (39 eligible players)
+Mean PPR total: 125.5
+Largest positive differences:
+  Juwan Johnson: draft 33, PPR 8, gap +25; 179.9 points, 17.0 games
+  Harold Fannin: draft 30, PPR 6, gap +24; 186.4 points, 16.0 games
+  Dalton Schultz: draft 29, PPR 10, gap +19; 177.7 points, 17.0 games
+  Theo Johnson: draft 32, PPR 15, gap +17; 127.8 points, 15.0 games
+  Dawson Knox: draft 37, PPR 25, gap +12; 103.7 points, 17.0 games
+Largest negative differences:
+  Sam LaPorta: draft 4, PPR 24, gap -20; 106.9 points, 9.0 games
+  David Njoku: draft 10, PPR 29, gap -19; 86.3 points, 12.0 games
+  Evan Engram: draft 8, PPR 26, gap -18; 102.8 points, 16.0 games
+  T.J. Hockenson: draft 5, PPR 23, gap -18; 112.8 points, 15.0 games
+  Isaiah Likely: draft 20, PPR 34, gap -14; 61.7 points, 14.0 games
