@@ -19,3 +19,21 @@ Added a season audit with a 2025 source spot-check and concrete team-label
 discrepancies. ADP season remains unverified rather than guessed as 2026.
 Added season/interpretation fields to exported results and regression checks
 for ranking ties, position groups, missing data, exclusions, and empty input.
+
+Phase 1 simplification - September 17, 2026
+Replaced compact ranking expressions with explicit loops and ordinary
+dictionaries. Kept one program file and preserved the calculated results.
+Changed the terminal summary to aligned tables showing three positive and
+three negative differences per position; the CSV still includes everyone.
+Removed obsolete cleaning attempts and duplicate data from the active project.
+Kept original source exports in data/raw for reference. Earlier preparation
+code is retained in Git history. Replaced future-phase placeholder folders
+with TIMELINE.md and added an optional GUI after the required course phases.
+
+Cleanup completed and verified - September 22, 2026
+Finished the interrupted cleanup and regenerated the terminal report.
+All four tests pass. All 273 player calculations match the prior output.
+Original exports are in data/raw. Removed the duplicate merged CSV, obsolete
+cleaning scripts, superseded cleaned CSVs, and generated Python cache.
+Unrelated coursework was preserved. Removed files remain recoverable from
+earlier GitHub commits; a temporary local cleanup ZIP was also created.

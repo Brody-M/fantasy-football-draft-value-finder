@@ -8,6 +8,11 @@ This dataset combines historical NFL player statistics with saved Footballguys A
 
 ## Sources and period
 
+Project cleanup note (September 22, 2026): original exports now live in
+`../data/raw/`. The cleaned intermediates and old preparation scripts mentioned
+below describe the preparation history and are recoverable from earlier Git
+commits. The active program reads only the merged CSV beside it.
+
 - Statistics: the supplied `NFLData.csv`, a Sports Reference export, and its reduced version, `NFLData_cleaned.csv`. All numeric values in the cleaned file were checked against the raw export. The figures align with the 2025 summary on [Pro Football Reference's Fantasy Tools page](https://www.pro-football-reference.com/fantasy/index.htm). The local export does not include a season field.
 - Draft rankings: the supplied `adp.txt`, corresponding to the [Footballguys ADP table](https://www.footballguys.com/adp). The existing cleaned file is named `footballguys_2025_adp_cleaned.csv`, but a filename alone does not establish the snapshot date. The saved ranks were preserved; live website values were not substituted. Team labels differ between the two supplied sources and are retained separately.
 
