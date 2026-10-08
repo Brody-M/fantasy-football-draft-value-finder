@@ -37,3 +37,25 @@ Original exports are in data/raw. Removed the duplicate merged CSV, obsolete
 cleaning scripts, superseded cleaned CSVs, and generated Python cache.
 Unrelated coursework was preserved. Removed files remain recoverable from
 earlier GitHub commits; a temporary local cleanup ZIP was also created.
+
+Version 2 - Phase 2: responsibilities, modules, and data structures
+Date: October 8, 2026
+Track: Vibe Code Project, Phase 2
+
+Split the program into main.py (coordinate steps), data_io.py (file I/O),
+analysis.py (grouping and calculations), and reporting.py (terminal tables).
+Added function type hints and summary/Args/Returns docstrings. Extracted
+eligibility checks and ranking from the original combined analysis function.
+Used a set of required CSV columns and set difference for missing columns,
+short comprehensions for position lists and gap filtering, and dictionaries
+for player records and exclusion counts. Shared positive/negative table logic.
+Retained the existing ranking method, display ordering, CSV fields, and data
+season limitations. Version 1 is preserved as the earlier course snapshot.
+No new sorting algorithms, function-precondition system, pandas, plots, or
+GUI were added. Those remain later work. Added focused CSV I/O checks along
+with the earlier calculation checks. AI assistance: OpenAI Codex.
+
+Validation: all six checks passed. Compared the generated CSV with Version 1:
+all 273 player rows and their order match. The input CSV is identical, and the
+terminal report matches except for its phase label. GitHub connection restored
+October 8, 2026; Version 2 and the updated project notes are ready to publish.

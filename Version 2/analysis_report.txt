@@ -1,0 +1,83 @@
+==================================================================
+  FANTASY FOOTBALL | PHASE 2
+==================================================================
+  2025 PPR production vs. saved draft order
+  ADP season / scoring unverified: comparisons, not predictions.
+
+  Players loaded: 651   Compared: 273   Skipped: 378
+  Draft and PPR are ranks within the same position group.
+  Gap = Draft - PPR. Positive means a better production rank.
+
+==================================================================
+  QB | 39 players
+==================================================================
+  HIGHER IN PRODUCTION (largest positive gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Matthew Stafford             25     3   +22   350.4    17
+  Trevor Lawrence              20     4   +16   338.2    17
+  Jaxson Dart                  29    13   +16   241.6    14
+
+  LOWER IN PRODUCTION (largest negative gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Jayden Daniels                3    31   -28   114.3     7
+  Kyler Murray                  9    35   -26    77.8     5
+  Joe Burrow                    5    28   -23   134.5     8
+
+==================================================================
+  RB | 83 players
+==================================================================
+  HIGHER IN PRODUCTION (largest positive gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Rico Dowdle                  54    17   +37   216.3    17
+  Emanuel Wilson               83    46   +37    94.5    17
+  Devin Singletary             79    43   +36   108.8    17
+
+  LOWER IN PRODUCTION (largest negative gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Kaleb Johnson                27    78   -51     8.8    10
+  James Conner                 20    66   -46    33.3     3
+  Austin Ekeler                41    74   -33    13.1     2
+
+==================================================================
+  WR | 112 players
+==================================================================
+  HIGHER IN PRODUCTION (largest positive gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Michael Wilson               85    10   +75   220.6    17
+  Tre Tucker                   97    37   +60   161.7    17
+  Wan'Dale Robinson            65    14   +51   217.9    16
+
+  LOWER IN PRODUCTION (largest negative gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Malik Nabers                  5    84   -79    57.1     4
+  Tyreek Hill                  13    87   -74    53.5     4
+  Calvin Ridley                29    95   -66    47.3     7
+
+==================================================================
+  TE | 39 players
+==================================================================
+  HIGHER IN PRODUCTION (largest positive gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Juwan Johnson                33     8   +25   179.9    17
+  Harold Fannin                30     6   +24   186.4    16
+  Dalton Schultz               29    10   +19   177.7    17
+
+  LOWER IN PRODUCTION (largest negative gaps)
+  Player                    Draft   PPR   Gap  Points Games
+  Sam LaPorta                   4    24   -20   106.9     9
+  David Njoku                  10    29   -19    86.3    12
+  T.J. Hockenson                5    23   -18   112.8    15
+
+==================================================================
+  DATA NOTES
+==================================================================
+    1 skipped: Different positions in the sources
+  373 skipped: Not in both sources
+    4 skipped: Missing or invalid points / draft rank
+  Missing values are not zero. Ties share ranks (1, 2, 2, 4).
+  Total points reflect games played. Compare gaps within positions.
+  See data_season_audit.md for the season uncertainty.
+
+  Full results: player_comparison.csv
+  This summary: analysis_report.txt
+==================================================================
